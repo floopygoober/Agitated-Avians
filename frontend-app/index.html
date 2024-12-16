@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Level Editor</title>
+    <title>Aggitated Avians</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Level Editor</h1>
-    <div id="toolbox">
-        <button id="add-block">Add Block</button>
-        <button id="add-pig">Add Pig</button>
-        <button id="set-bird-spawn">Set Bird Spawn</button>
-    </div>
-    <div id="editor"></div>
-    
-    <button id="save-level">Save Level</button>
-    <input type="text" id="level-id" placeholder="Enter Level ID">
-    <button id="load-level">Load Level</button>
-    
-
-    <select id="level-list">
-        <option value="">Select a level</option>
-    </select>
-
-    <button id="delete-level">Delete Level</button>
-
+    <!-- Include jQuery UI and Planck JS for functionality -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <script src="https://unpkg.com/planck-js@latest/dist/planck.min.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+    <header>
+        <h1>Aggitated Avians (not good vibes :C )</h1>    
 
+        <!-- Toolbox for adding objects -->
+        <div id="toolbox">
+            <button id="add-block">Add Block</button>
+            <button id="add-pig">Add Pig</button>
+            <button id="save-level">Save Level</button>
+            <input type="text" id="level-id" placeholder="Enter Level ID">
+            <button id="load-level">Load Level</button>
+
+            <select id="level-list">
+                <option value="">Select a level</option>
+            </select>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Game canvas -->
+        <canvas id="game-canvas"></canvas>
+    </main>
+
+    <footer>
+        <p>2024 All rights reserved. lol yeah its legit.</p>
+    </footer>
+    <!-- Level editor script -->
     <script src="editor.js"></script>
 </body>
 </html>
